@@ -1,0 +1,14 @@
+body {
+    background-repeat: no-repeat;
+    background-image: url(Screenshot%202023-11-28%20163742.png);
+    background-color: #f4f4f4;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    background-position: center;
+}
+section {
+    vertical-align: bottom;
+    text-align: center;
+    width: 1000px;
+}
