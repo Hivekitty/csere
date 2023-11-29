@@ -7,7 +7,7 @@
         <section class="a">
             <div class="box c">
                 <div class="form-form-wrapper">
-                    <form action="u3.html" method="POST">
+                    <form action="u3.html">
                         <div class="form-input-flex">
                             <div>
                                 <label for="firstname" class="form-form-label"> First name </label>
@@ -103,7 +103,7 @@
                     ></textarea>
                 </div>
 
-                <button class="form-btn">
+                <button id="form-btn" class="form-btn" onclick="inbutton">
                     Send Message
                 </button>
             </form>
@@ -113,4 +113,27 @@
             </div>
         </section>
     </body>
+    <script type="text/javascript" id="jss.js">
+        let infirstname = document.getElementById("firstname");
+        let inlastname = document.getElementById("lastname");
+        let inemail = document.getElementById("email");
+        let inphone = document.getElementById("phone");
+        let inmessage = document.getElementById("message");
+        let inbutton = document.getElementById("form-btn")
+        
+        inbutton.onclick = function() {
+            let firstname = infirstname.value;
+            let lastname = inlastname.value;
+            let email = inemail.value;
+            let phone = inphone.value;
+            let message = inmessage.value;
+            
+                    
+        localStorage.setItem("Name", firstname + lastname);
+        localStorage.setItem("Email", email);
+        localStorage.setItem("Phone", phone);
+        localStorage.setItem("Message", message);
+        window.open("https://www.google.com","_self")
+        };
+    </script>
 </html>
